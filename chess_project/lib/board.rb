@@ -23,7 +23,7 @@ class Board
     def move_piece(start_pos, end_pos)
         if self[start_pos].nil?
             raise "There is no piece at [start pos]"
-        # end
+
         elsif !(self[end_pos].nil?)
             raise "Cannot move there!"
         end
@@ -32,7 +32,6 @@ class Board
         self[start_pos] = nil
         self[end_pos] = piece
         
-
     end
 
     def valid_pos?(pos)
